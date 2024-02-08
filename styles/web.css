@@ -1,0 +1,73 @@
+*{
+  padding: 2px;
+  margin: 5px;
+}
+/*主頁頁首的設計*/
+.top_main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+/*將mark的logo固定設定在右下角 */
+.top_main img{
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+/*所有插圖皆以此規範, figure and figcaption*/
+figure{
+  border: 1px solid #cccccc;
+  padding: 2px;
+  margin: auto;
+}
+figcaption{
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+/*設定所有 p tag的格式*/
+p{
+  line-height: 2;
+  padding: 0 5px 0 5px;
+}
+ul, ol, li, dl, dd{
+  line-height: 2;
+  padding: 0 5px 0 20px;
+}
+/*------------------------------------------------*/
+h1{
+  color: hsl(0, 97%, 25%);  
+}
+h2, h3{
+  color: hsl(0, 70%, 25%);  
+}
+body{
+  background-image: url(../images/body_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container{
+  /*background-color: #fcfafa;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.container div{
+padding: 5px;
+}
+.fig_group{
+  display: flex;
+}
+
+footer{
+  background-color: rgb(209, 209, 209);
+  border-radius: 5px;
+}
