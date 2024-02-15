@@ -53,9 +53,10 @@ body{
   background-size: cover;
 }
 .container{
+  /*background-color: #fcfafa;*/
   display: flex;
-  flex-direction: column;
-  /*justify-content: center;*/
+  flex-direction: row;
+  justify-content: center;
   justify-content: space-around;
   align-items: center;
 }
