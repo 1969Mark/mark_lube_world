@@ -70,3 +70,22 @@ footer{
   background-color: rgb(209, 209, 209);
   border-radius: 5px;
 }
+/*設定表格*/
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: separate; /* 讓邊框分開 */
+  border-spacing: 2px; /* 設定間距 */
+}
+th {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+tr td {
+  /*border-bottom: 1px solid black;*/
+  outline: 1px solid black;
+}
+td {
+  text-align: left;
+}
