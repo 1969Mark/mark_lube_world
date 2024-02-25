@@ -1,0 +1,200 @@
+<!doctype html>
+<!--DOCTYPE或Ddoctype都可以，沒大小寫之分-->
+<!--<!DOCTYPE html> 是HTML文件的文档类型声明，用于告诉浏览器该文件使用的 HTML 版本-->
+<html lang="en">
+<head>
+<!--<head> 元素，裡面放的是你想涵括的重要資訊，但不會顯示於網頁瀏覽者眼前的-->
+    <meta charset="UTF-8">
+    <!--這個元素指定了你的文件使用 utf-8 這種字元編碼-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="潤滑油, 船舶潤滑油, lubricant, lubrication, marine lubricant, marine lubrication, 
+        cylinder oil, two stroke engine cylinder oil"
+    <link rel="icon" type="image/png" href="images/mark_small.png">
+    <title>馬克的潤滑油世界</title>
+    <link rel="stylesheet" href="../styles/web.css">
+    <!--階層樣式表 (Cascading Stylesheets；CSS)-->
+</head>
+
+<body>
+    <!--頁頭與主頁相同-->       
+    <div class="top_main">
+        <h1 style="font-size:40px;">馬克的潤滑油世界</h1>
+        <a href="../index.html">回首頁</a>
+        <img src="../images/mark_small.png" height="140px"/>
+    </div>
+    <!--各議題頁頭-->   
+    <div>
+        <h2 style="font-size:30px;">二衝程主機汽缸殘油化驗解讀</h2>
+        <h3 style="font-size:20px;">prepared by Mark Chuang</h3>       
+    </div>
+    <hr>
+    <!--正式文章開始-->    
+    <main>
+        <div  class="container" >
+                <p>
+                    雖然潤滑油的花費在整個船舶的營運成本中所占的比例相當低，但藉由延長潤滑油的換油周期，卻是最容易達成節省成本的方法之一。問題是，換油週期並非隨便決定延長就延長，若處理不當，可能會損及設備的使用壽命，甚至影響產能與正常營運。如何確知油品是否可繼續使用，透過定期的油樣化驗即可知曉。油樣化驗的目的，是希望透過收集具代表特性的油樣，經精密儀器檢測其物理特性及各種金屬含量，藉以判斷系統內油品的適用性以及設備的磨損狀況，故此，如何正確汲取具代表性的油樣即相當重要。<br>
+                    <br>
+                    油樣的種類根據設備使用類別約可簡易分為兩類：一是非引擎類油樣，如齒輪油、液壓油、循環油、空壓機油等，此類油樣的化驗比較偏向油品的特性分析，如黏度 (Kinematic Viscosity @40℃)、不溶物(Insolubles) 、 含水量(Water Content) 、酸值(Acid number)、 黏度指數(Viscosity Index)等，對於此類油品是否繼續適用的建議，只要根據化驗結果的控制值(各油公司皆有各自的化驗結果控制值control limit)即可作判斷，基本上較簡單也無太大爭議。這類化驗強調的是看歷史化驗紀錄的"發展趨勢"，這有助於判斷造成的原因與設備的狀況; 如果趨勢是穩定上升或下降，這屬正常發展，如果忽然有某參數特別異常，必須深入了解可能原因，常常發現船員取樣作業錯誤或取錯油樣，遇到這類問題做好澄清取樣作業並再次取樣做進一步確認。
+            。<br>
+                    <br>
+                    另一類是引擎油樣，這類油樣化驗結果的判斷與建議，則需要更專業的訓練與經驗，藉以協助判斷與分析。引擎滑油因與燃燒室有所接觸，引擎的燃燒狀況與引擎的磨損程度可藉由油樣化驗作初步預判，故在化驗項目上除上述油品特性的化驗外，金屬成分的分析更需要特別詳細。二衝程低速引擎的潤滑系統與四衝程中速引擎的設計相當不同。四衝程機僅有一套潤滑油循環系統，潤滑油潤滑汽缸與曲軸；二衝程機則分為兩潤滑系統，汽缸部分由汽缸油(Cylinder Oil)潤滑，曲軸部分由系統油(System Oil)潤滑，兩部分由填料函(Stuffing box)設備作區隔。因汽缸油會與燃燒過程的高溫直接接觸，屬於一次性潤滑方式，即潤滑油在爆炸燃燒過程燒掉，部分少數剩餘的汽缸油則會隨汽缸壁或刮油環收集至底部，此部份的油樣即可作為分析。fig_wear_source是化驗報告中金屬成分的可能來源。
+                </p>
+        </div>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_dos_wearsource.png" width="450px"/>
+                <figcaption>fig_wear_source 金屬成分的可能來源</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_dos_sampling.png" />
+                <figcaption>fig_汽缸殘油取樣過程</figcaption>                    
+            </figure>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p>
+                <em><b>主機系統油分析</b></em><br>             
+                主機系統油(Main Engine System Oil)在二衝程引擎中，極易受到外來污染物污染，造成油品狀況急速惡化；其中以黏度(Viscosity)與鹼值(BN)變化最快，一般同時會伴隨不溶物(Insolubles) ，釩(Vanadium)與鈣(Calcium)值的增加。而這些污染物來源不外乎汽缸油，氧化物，燃燒產物，燃油與金屬磨損物。而造成的主要原因為填料函或活塞連桿(Piston Rod)磨損所致，特別是長衝程引擎更易發生此問題。早期引擎設計會有大量的汽缸油回收至系統油再使用(節省成本的設計)，但由於種種不利問題的衍生，基本上目前已不再有此種設計。從潤滑與冷卻的觀點，黏度是一重要的特性。引擎製造商一般設定主機系統油黏度于SAE 30，當黏度因污染或氧化造成急速升高，會對循環系統造成一定程度的影響，黏度的升高，引至內阻力上升與熱傳導係數的下降，進而降低移除熱量的效能。鹼值添加劑成分為碳酸鈣(CaCO<sub>3</sub>)主要溶於汽缸油中，用來中和燃料油中的硫份因燃燒所形成的酸，但從汽缸油來的過多的鹼值，因污染且存在於系統油中時，在某些狀況下會於軸承(Bearing)形成青漆(Lacquer)現象，也會影響油水分離的特性。系統油有時也會透過填料函，被向上刮入掃汽室，故當進行CDO(Cylinder Drain Oil)化驗分析時，必須同時分析系統油對CDO污染的程度，才能準確的判斷引擎實際狀況。因傳統汽缸油添加劑中不含鋅(Zinc)和磷(P)等成分(系統油添加劑才有此成分)，故可依據此金屬含量來判別與計算汽缸油油樣受系統油污染的程度。但現今新類型的汽缸油，如MAN B&W定義的Cat. II汽缸油，在配方上與傳統配方有所不同，如何計算CDO汙染量還需要進一步討論。
+            </p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p>
+                <em><b>主機汽缸殘油(CDO)化驗報告彙整與分析</b></em><br>
+                就主機廠家而言，汽缸殘油化驗主要關注殘留鹼值數值(是否有足夠酸鹼中和能力)與鐵含量(鐵含量表示磨損程度)，對於其他化驗數值較少關注或深入探討。當然實驗室化驗汽缸殘油不只化驗這兩項，其他油樣物性和金屬成分也會一併化驗。CDO金屬成分的來源主要有三個方面，主機金屬部分的磨損，外來的污染物，以及汽缸油本身的添加劑成分。主機磨損及外來污染物部分將是分析的重點。
+            </p>        
+            <dl>
+                <dt><u>黏度-釩-水分 (Viscosity (100℃) / Vanadium / Water)</u></dt>
+                    <dd>黏度的變化主要來自油品的氧化所造成，但也有可能是水分與燃油乳化後造成油泥產物所致。水分過高會造成汽缸的低溫腐蝕。釩是燃油中的成分，當與鈉值存在一定比例時，排氣閥處會有高溫腐蝕的危險，若鈉值偏高，有可能是燃油污染所致。</dd>
+                <dt><u>鹼值-鈣 (BN / Calcium)</u></dt>
+                    <dd>如果同時存在高含量的鹼值與鈣質，可能是注油率過高或發生汽缸油燒掉現象。</dd>
+                <dt><u>鹼值-鐵份 (BN / Iron)</u></dt>
+                    <dd>鹼值偏高，鐵份含量卻未超過限定值，建議進行各缸汽缸油注油率減少的動作。鐵質含量的多寡，直接反應缸套的磨損程度，當低鹼值高含鐵量狀況發生時要特別注意，有可能會造成酸性腐蝕。一般市售新的汽缸油鹼值約70，經過中和反應過程，殘留的鹼值約降至40~45，此意謂僅約有1/3的鹼值會在反應過程中消耗。</dd>
+                <dt><u>鋁矽 (Al+Si)</u></dt>
+                    <dd>根據ISO 8217於2017年的燃料油規範，燃料油中的Al和Si的總量不可超過60ppm(引擎設備廠家建議進入引擎前最好降至15ppm)，此值與原油煉製過程所加入的觸媒微粒(Cat-fine)有關。當Al+Si值皆偏高，解決此問題的根本方法須從供貨端要求，並同時提高淨油機的效率，如提升操作溫度。</dd>
+                <dt><u>鐵-鐵份 (PQ-Index / Iron )</u></dt>
+                    <dd>PQ-Index為測量大直徑(約10um)的鐵顆粒，而鐵份則是測量5um直徑以下的鐵微粒，兩者測驗目的有些許的不同。</dd>
+                <dt><u>銅-銻-鉻 (Copper / Tin / Chromium)</u></dt>
+                    <dd>高銅值主要是活塞裙(Piston skirt)磨損索引致；銻值則可判斷活塞安裝對心問題；鉻值則是反映活塞環槽磨損與否。</dd>
+                <dt><u>鋅 (Zinc)</u></dt>
+                    <dd>鋅為主機系統油的一種添加劑，汽缸油則無此添加劑，故可藉由此值的高低判斷是否有活塞填料函的功能是否正常。</dd>
+                    <div class="fig_group">
+                        <figure>
+                            <img src="../images/fig_dos_9cylcase.png" width="450px"/>
+                            <figcaption>fig_9缸主機的案例</figcaption>
+                    </div>
+            </dl>
+            <br>
+            <p>CDO油樣化驗數據雖可提供各汽缸運轉狀況供輪機長參考，但也有部分數據會混淆或誤判，所以一般會佐以定期從掃氣室檢查缸套與活塞環狀況(Scavenge port inspection)，並與化驗結果相互比較，進而對注油率加以調整以達到最佳化狀態(Optimizing)，畢竟過高的注油率對引擎汽缸不好，會造成磨損，同時也浪費金錢。fig_BN & Iron分布圖根據不同數值區間將區塊做不同定義區分，在船隊管理上，這款分類對於日後進行大數據分析相當有幫助。fig_某船隊的BN&Iron分布圖(強化版)是將原本BN and Iron的分布圖外加正態分布圖(可看出BN和Iron各自的分布狀況)，同時將船隊所用的汽缸油種類一併納入分析。當然，也可以根據船隊中所用的主機類別和燃油類別來分析。<br>
+                <div class="fig_group">
+                    <figure>
+                        <img src="../images/fig_dos_BNandIron.jpg" />
+                        <figcaption>fig_BN & Iron的分布圖</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/fig_dos_BNandFe_oneowner.png" width="450px"/>
+                        <figcaption>fig_某船隊的BN&Iron分布圖(強化版)</figcaption>
+                    </figure>
+                </div>
+                <div class="fig_group">
+                    <figure>
+                        <img src="../images/fig_dos_OEM_oneowner.png" />
+                        <figcaption>fig_某船隊的BN&Iron分布圖- 根據主機廠家分類</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/fig_dos_fuel_oneowner.png"/>
+                        <figcaption>fig_某船隊的BN&Iron分布圖- 根據燃油類別分類</figcaption>
+                    </figure>
+                </div> 
+            </p>
+        </div>
+        <br>
+        <p><em><b>案例分析 :</em></b> <b style="color: red">MAN B&W 6S50MC-C, 使用0.5%以下硫含量燃油，4艘同系列船，共223個油樣</b>
+                <dl>
+                    <dt>BN & Iron 散布圖</dt>
+                    <dd>此案例的所有油樣顯示無特別異樣狀態，各船主機燃燒狀況一致(鐵值中位數26.95; 鹼值中位數32.52)。</dd>
+                    <dt>80% Iron的分布圖</dt>
+                    <dd>80%的油樣其鐵含量在40ppm以下; 大概90%的鐵含量在50ppm以下。</dd>
+                    <dt>PQ/Iron/LOFR 關係</dt>
+                    <dd>磨損鐵(Iron)與PQ-Index(大顆粒鐵)的存在成正向關係; 跟汽缸油注油率沒太直接關係(資料相對離散)。</dd>
+                    <dt>燃燒狀態、cat-fine與磨損關係</dt>
+                    <dd>鐵含量與金屬釩和觸媒微粒(Al+Si)成正比例關係，此案例燃燒狀況與觸媒微粒對磨損的影響程度相當。</dd>
+                </dl>
+            <br>
+        </p>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_dos_case1_bnandiron.png" width="400px"/>
+                <figcaption>fig_case1_BN & Iron 散布圖</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_dos_case1_iron.png" width="400px"/>
+                <figcaption>fig_case1_80% Iron的分布圖</figcaption>                    
+            </figure>
+            </div>
+        </div>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_dos_case1_pqironlofr.png" width="400px"/>
+                <figcaption>fig_case1_PQ/Iron/LOFR 關係</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_dos_case1_vironalsi.png" width="400px"/>
+                <figcaption>fig_case1_燃燒狀態、cat-fine與磨損關係</figcaption>                    
+            </figure>
+            </div>
+        </div>
+        <br>
+        <p><em><b>案例分析 :</em></b> <b style="color: red">Win GD 11x92-B, 使用3%左右硫含量的高硫燃油，4艘同系列船，共209個油樣</b>
+            <br>
+            <br>
+        </p>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_dos_case2_bnandiron.png" width="400px"/>
+                <figcaption>fig_case1_BN & Iron 散布圖</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_dos_case2_iron.png" width="400px"/>
+                <figcaption>fig_case1_80% Iron的分布圖</figcaption>                    
+            </figure>
+            </div>
+        </div>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_dos_case2_pqironlofr.png" width="400px"/>
+                <figcaption>fig_case1_PQ/Iron/LOFR 關係</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_dos_case2_vironalsi.png" width="400px"/>
+                <figcaption>fig_case1_燃燒狀態、cat-fine與磨損關係</figcaption>                    
+            </figure>
+            </div>
+        </div>
+
+     <!--參考文獻段落-->   
+        <div>
+            <i>
+            <p>參考資料來源</p>
+            <ul>
+                <li>Win GD</li>
+                <li>CIMAC Paper</li>
+                <li>Lubmarine material</li>
+            </ul>
+            </i>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h5>
+                <p>如果對文章內容有疑慮，歡迎來信討論指教</p>
+                <a href="mailto:mark.chuang@totalenergies.com">email to me (Mark CHUANG)</a>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+</html>
