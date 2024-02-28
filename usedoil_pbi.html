@@ -1,0 +1,101 @@
+<!doctype html>
+<!--DOCTYPE或Ddoctype都可以，沒大小寫之分-->
+<!--<!DOCTYPE html> 是HTML文件的文档类型声明，用于告诉浏览器该文件使用的 HTML 版本-->
+<html lang="en">
+<head>
+<!--<head> 元素，裡面放的是你想涵括的重要資訊，但不會顯示於網頁瀏覽者眼前的-->
+    <meta charset="UTF-8">
+    <!--這個元素指定了你的文件使用 utf-8 這種字元編碼-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="潤滑油, 船舶潤滑油, lubricant, lubrication, marine lubricant, marine lubrication, 
+        cylinder oil, two stroke engine cylinder oil"
+    <link rel="icon" type="image/png" href="images/mark_small.png">
+    <title>馬克的潤滑油世界</title>
+    <link rel="stylesheet" href="../styles/web.css">
+    <!--階層樣式表 (Cascading Stylesheets；CSS)-->
+</head>
+
+<body>
+    <!--頁頭與主頁相同-->       
+    <div class="top_main">
+        <h1 style="font-size:40px;">馬克的潤滑油世界</h1>
+        <a href="../index.html">回首頁</a>
+        <img src="../images/mark_small.png" height="140px"/>
+    </div>
+    <!--各議題頁頭-->   
+    <div>
+        <h2 style="font-size:30px;">使用Power BI做油樣化驗管理</h2>
+        <h3 style="font-size:20px;">prepared by Mark Chuang</h3>       
+    </div>
+    <hr>
+    <!--正式文章開始-->    
+    <main>
+        <p>
+            對於一家擁有數艘甚至數十艘船舶的公司，每艘船、每個設備是否有定期送油樣化驗，化驗結果是否有落實追蹤改善，這些工作相當瑣碎也很費心，除非有專責人員負責，否則往往會有所遺漏。中、小型船舶公司人力較精簡，往往都是一人身兼數職，如果有方便的管理方式，相信會事半功倍，再者，如果這管理工具是免費的，那主管人員應該更容易接受。以往，Microsoft Ecxcel是一般上班族常用的資料管理工具，方便且容易上手，但當資料越來越複雜或越來越多後，想要以簡單易懂的方式呈現給長官，也就越來越難。Power BI和Excel一樣是Microsoft內建的一工具軟體，只要Office軟體是正規版本，透過電郵信箱認證即可直接下載安裝。
+                Power BI是一個強大的商業智能工具，用於資料分析、視覺化和報表建立，它與傳統Excel之間的主要區別和優點：
+            <dl>
+                <dt><i>資料處理和視覺化：</i></dt>
+                    <dd>Excel：Excel 是一個電子表格程序，用於儲存資料和分析數據。它需要事先處理數據並手動建立圖表。Power Query可進行資料處理。</dd>
+                    <dd>Power BI：Power BI 可直接連接數據源，並提供強大的資料清理功能(Power Query)。它能夠快速建立互動式報表和儀表板，並以豐富多樣的視覺化圖表呈現數據。</dd>
+                <dt><i>資料量和結構：</i></dt>
+                    <dd>Excel：Excel 的數據存儲量有限，且較為簡單。它適合小型數據集。</dd>
+                    <dd>Power BI：Power BI 可處理大量複雜的數據，並具有良好的結構化查詢語言。它適用於大型數據集和複雜的分析.</dd>
+                <dt><i>自動重新整理和即時數據：</i></dt>
+                    <dd>Excel：需要手動重新整理數據。</dd>
+                    <dd>Power BI：可自動重新整理數據，並在開啟儀表板時立即取得正確的資料.</dd>
+                <dt><i>進階分析和自訂視覺效果：</i></dt>
+                    <dd>Excel：有限的進階分析功能。</dd>
+                    <dd>Power BI：自訂視覺效果，以及進階分析工作流。可以外掛其他應用軟體讓視覺效果更生動與多樣化，如Pythonc或Deneb。</dd>
+            </dl>
+        兩者都可以可以使用內建的Power Query來淨化、初步整合資料。總之，Power BI 專注於資料分析和報表建立，而 Excel 更適合統計報表。使用這兩者的結合，您可以更全面地探索和呈現商務資料。
+        </p>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_usedoil_pbi_excel.png"/>
+                <figcaption>fig_Microsoft內掛的Excel和Power BI應用軟體</figcaption>                    
+            </figure>
+        </div>
+        <br>
+        <br>
+        <p>
+            以Power BI來管理油樣，基本上必須先備齊以下檔案，之後導入Power BI並建立檔案間的"關係":
+                <ol type="a">
+                    <li>化驗報告彙整檔(如關係圖中的"Record")。請油公司或實驗室提供每份化驗報告的Excel檔，並將資料匯整，已可以獨立報告，只是導入Power BI的方式不同。</li>
+                    <li>建立化驗設備清單(如關係圖中的"Unit ID")。根據每艘船每個化驗設備的編號彙整，如有更新設備則逐一加入即可，並標註每個設備預定化驗週期，如60天或90天，這目的是要在"提醒電郵"中設定下次取油樣的日期。</li>
+                    <li>建立各船電郵清單(如關係圖中的"Ship_Email")。以後可用定期自動或手動激發來發送"提醒"電郵給船上。這部分需要再倒入Power Automate建立"流程"才能完成。</li>
+                </ol>
+        </p>
+        <br>
+        <p>
+            這個管理工具主要是透過Power BI強大的分析功能，串聯不同來源的檔案，又可用視覺化的圖表來呈現重點，在開會或呈報主管時，內容十分清楚簡單、明瞭。另外，此系統還可以根據需求不斷拓寬其關係，例如可以把各船"備品"的資料檔串聯進來並進一步分析。這個管理方案我已完整進行數年，效果很令人滿意同時也節省很多的時間，只要先前必備檔案備齊，每次收到新報告後"Refresh"該檔案，先前設定的功能就會自動更新。
+
+        </p>
+        <br>
+        <br>
+        <div class="fig_group">
+            <figure>
+                <img src="../images/fig_usedoil_pbi_relation.png" width="400px"/>
+                <figcaption>fig_各檔案之間的關係</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_usedoil_pbi_flow.png" width="500px"/>
+                <figcaption>fig_管理專案流程圖</figcaption>
+            </figure>            
+        </div>
+     <!--參考文獻段落-->   
+        <div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h5>
+                <p>如果對文章內容有疑慮，歡迎來信討論指教</p>
+                <a href="mailto:mark.chuang@totalenergies.com">email to me (Mark CHUANG)</a>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+</html>
