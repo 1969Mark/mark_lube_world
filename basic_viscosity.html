@@ -1,0 +1,109 @@
+<!doctype html>
+<!--DOCTYPE或Ddoctype都可以，沒大小寫之分-->
+<!--<!DOCTYPE html> 是HTML文件的文档类型声明，用于告诉浏览器该文件使用的 HTML 版本-->
+<html lang="en">
+<head>
+<!--<head> 元素，裡面放的是你想涵括的重要資訊，但不會顯示於網頁瀏覽者眼前的-->
+    <meta charset="UTF-8">
+    <!--這個元素指定了你的文件使用 utf-8 這種字元編碼-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="潤滑油, 船舶潤滑油, lubricant, lubrication, marine lubricant, marine lubrication, 
+        cylinder oil, two stroke engine cylinder oil"
+    <link rel="icon" type="image/png" href="images/mark_small.png">
+    <title>馬克的潤滑油世界</title>
+    <link rel="stylesheet" href="../styles/web.css">
+    <!--階層樣式表 (Cascading Stylesheets；CSS)-->
+</head>
+
+<body>
+    <!--頁頭與主頁相同-->       
+    <div class="top_main">
+        <h1 style="font-size:40px;">馬克的潤滑油世界</h1>
+        <a href="../index.html">回首頁</a>
+        <img src="../images/mark_small.png" height="140px"/>
+    </div>
+    <!--各議題頁頭-->   
+    <div>
+        <h2 style="font-size:30px;">基礎磨潤學與黏度</h2>
+        <h3 style="font-size:20px;">prepared by Mark Chuang</h3>       
+    </div>
+    <hr>
+    <!--正式文章開始-->    
+    <main>
+        <div  class="container" >
+            <div>
+                <p>
+                    在過往的經驗中，我常與客戶提醒，油品的黏度選擇十分重要。黏度等級選擇正確，基本上設備大概70%不會有問題，因為有足夠油膜作保護避免金屬面的接觸磨損，其餘的就是考慮設備的應用類型與所需要的添加劑種類，例如齒輪油要考慮是否有極壓添加劑，又例如發電機油是否有足夠的鹼值添加劑等等。 在磨潤學中，有一理論稱為Stribeck Curve<sup>(ref.1 & ref.2)</sup>。Stribeck curve是力學當中磨潤學的一個基礎概念。該曲線指出流體潤滑接觸摩擦力是接觸負載、潤滑劑黏度以及潤滑劑夾帶速率的非線性函數。斯特里貝克曲線示意圖（橫軸為赫西數；縱軸為摩擦力或摩擦係數）區分為 1. 邊界潤滑 2. 混合潤滑 3. 流體動力潤滑。對於兩流體潤滑介面的接觸行為，斯特里貝克曲線指出了赫西數（Hersey number）與摩擦係數之間的非線性關係。其中，赫西數為無因次量，並定義為：<br>
+                    Harsey number = (η * N) / P <br>
+                    其中，η為流體動態黏度，N為流體夾帶速率，而P是摩擦接觸的正向負載。因此，給定一黏度和負載，斯特里貝克曲線可描述摩擦力如何隨速度而改變。基於典型的斯特里貝克曲線（如下圖所示），可定義三種潤滑機制：
+                    <dl>
+                        <dt>邊界潤滑（boundary lubrication）</dt>
+                        <dd>固體表面的直接接觸，主要由表面粗糙度支撐負載、高摩擦力。在這個區域中，潤滑主要依賴於固體潤滑劑（例如添加劑或固體薄膜）。表面之間的接觸點處於部分分離狀態，並且黏附力仍然存在。應用：在高壓、低速或極端條件下，邊界潤滑區域非常重要。例如，機械元件的起動和停止過程。</dd>
+                        <dt>混合潤滑（mixed lubrication）</dt>
+                        <dd>一些表面粗糙度接觸，由表面粗糙度和液體潤滑劑支撐負載。在這個區域中，潤滑既依賴於液體潤滑劑，也依賴於表面之間的黏附力。液體潤滑劑無法完全填充接觸表面。應用：中等速度下運行的機械系統通常處於混合潤滑區域。</dd>
+                        <dt>流體動力潤滑（hydrodynamic lubrication）</dt>
+                        <dd>粗糙度接觸可忽略不計，負載主要受流體動力的壓力影響。在這個區域中，潤滑完全依賴於液體潤滑劑，並且表面之間的接觸點完全分離。應用：高速運動的機械元件通常處於流體潤滑區域。</dd>
+                    </dl>
+                </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="../images/fig_basic_stribeck_curve1.png" width="300px"/>
+                    <figcaption>fig_Stribeck曲線</figcaption>                    
+                </figure>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p>
+                網站上有很多這類的研究與文章發表，更將此理論與油膜厚度做連結，讓讀者更容易理解此曲線的精神與意義。<sup>(ref.3)</sup>下圖的文件討論了機械系統中使用的不同類型的潤滑。它將邊界潤滑(Boundary Lubrication)描述為啟動過程中發生的金屬與金屬的接觸。靜壓潤滑(Hydrostatic Lubrication)使用外部壓力源透過潤滑膜分隔表面。流體動力潤滑(Hydrodynamic Lubrication)利用表面移動時流體黏度產生的液體壓力將表面完全分離。彈流潤滑(Elasto Hydrodynamic Lubrication)涉及滾動接觸，使表面彈性變形以對其進行潤滑。混合潤滑是邊界潤滑和流體動力潤滑的結合，其中粗糙度仍然接觸，但表面大部分是分離的。Stribeck 曲線說明了從邊界到流體動力學的摩擦和潤滑狀態之間的關係。
+        </p> 
+        <br>
+        <div class="fig_group">       
+            <figure>
+                <img src="../images/fig_basic_stribeck_curve2.png" width="450px"/>
+                <figcaption>fig_Stribeck曲線與油膜厚度關係</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/fig_basic_stribeck_curve3.png" width="500px"/>
+                <figcaption>fig_Stribeck曲線與油膜厚度關係</figcaption>
+            </figure>
+        </div>
+        <br>
+        <br>
+        <p>
+            在較實務的應用上，這曲線圖可理解如下: 基本上，所有的設備應該以最低摩擦係數為設計點，當設備操作環境或條件改變，為達到保護設備目的，可藉由改變潤滑油黏度來達成。例如設備的負載提高了，此時操作點會往曲線左邊移動，意味著摩擦力上升，油膜變小，可能導致摩擦發生，此時若改用較高級數黏度的潤滑油，則操作點又可拉回原先的設計點，也就是最低摩擦係數的設計點。同樣的，若設備速度提升，此時操作點會往曲線右邊移動，意味著摩擦力也會緩慢上升，導致此原因主要來自流體本身的內阻力所致，此時若改用較低級數黏度的潤滑油，則操作點又可拉回原先的設計點。由這曲線的理論也可得到一個概念，也就是當負載很大時，需要選擇高黏度等級的潤滑油，例如齒輪，必須選用ISO VG 220或ISO VG 320等類型的黏度等級; 又例如TuboCharger，非常高轉速，所以不會選用如齒輪油這類高黏度等級的油品，會選擇ISO VG 46或ISO VG 68的黏度等級。最後，黏度有不同的規範，一般使用者常會面臨的是ISO和SAE這兩款規範，舉例而言 ISO VG 100的黏度相當於SAE 30的黏度。
+
+        </p>
+        <br>
+        <div class="fig_group">       
+            <figure>
+                <img src="../images/fig_basic_viscosityclassification.png"/>
+                <figcaption>fig_各種黏動規範比較表</figcaption>
+            </figure>
+        </div>
+
+     <!--參考文獻段落-->   
+        <div>
+            <i>
+            <p>參考資料來源</p>
+            <ul>
+                <li>ref.1_維基百科</li>
+                <li>ref.2_Lubrication Fundamental” - D.M.Pirro, A.A.Wessol</li>
+                <li>ref.3_Lubrication,Types & Stribeck Curve - Engr. Tarique Ahmed Memon</li>
+            </ul>
+            </i>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h5>
+                <p>如果對文章內容有疑慮，歡迎來信討論指教</p>
+                <a href="mailto:mark.chuang@totalenergies.com">email to me (Mark CHUANG)</a>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+</html>
